@@ -155,7 +155,7 @@ AUC : 0.98
 
 
 ## Related:
-[Credit card fraud detection using Ensemble methods](https://github.com/Pradnya1208/Credit-card-fraud-detection-using-ensemble-learning-predictive-models)
+[Credit card fraud detection using Ensemble methods](https://github.com/Pradnya1208/Credit-card-fraud-detection-using-ensemble-learning-predictive-models)<br>
 [Credit card fraud detection using Isolation Forest and LOF](https://github.com/Pradnya1208/Credit-card-fraud-detection-using-Isolation-Forest-and-LOF)
 ### Feedback
 
