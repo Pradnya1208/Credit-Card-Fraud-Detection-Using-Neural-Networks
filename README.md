@@ -36,7 +36,7 @@ It contains only numerical input variables which are the result of a PCA transfo
 
 **Libraries:**  `NumPy` `pandas` `pylab` `matplotlib` `sklearn` `seaborn` `plotly` `tensorflow` `keras` `imblearn`
 ## Data Exploration:
-Only 492 (or 0.172%) of transaction are fraudulent. That means the data is highly unbalanced with respect with target variable Class.
+Only 492 (or 0.172%) of transaction are fraudulent. That means the data is highly unbalanced with respect with target variable Class.<br>
 <img src ="https://github.com/Pradnya1208/Credit-Card-Fraud-Detection-Using-Neural-Networks/blob/main/output/eda1.PNG?raw=true">
 <br>
 The dataset is highly imbalanced ! It's a big problem because classifiers will always predict the most common class without performing any analysis of the features and it will have a high accuracy rate, obviously not the correct one. To change that, I will proceed to random undersampling.
