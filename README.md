@@ -140,6 +140,8 @@ AUC : 0.98
 
 ### Lessons Learned
 `Neural Networks`
+`Undersampling`
+`Callbacks in Keras`
 `Classification Algorithms`
 `Multilayer Perceptrons`
 `XGBoost classifier`
