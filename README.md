@@ -66,7 +66,7 @@ AUC : 0.96
 ```
 
 ### Support Vector Machine:
-<img src = "https://github.com/Pradnya1208/Credit-Card-Fraud-Detection-Using-Neural-Networks/blob/main/output/svm.PNG?raw=true" width="33%"> <img src = "https://github.com/Pradnya1208/Credit-Card-Fraud-Detection-Using-Neural-Networks/blob/main/output/svm2.PNG?raw=true" width="33%"> <img src = "https://github.com/Pradnya1208/Credit-Card-Fraud-Detection-Using-Neural-Networks/blob/main/output/svm1.PNG?raw=true" width="33%">
+<img src = "https://github.com/Pradnya1208/Credit-Card-Fraud-Detection-Using-Neural-Networks/blob/main/output/svm.PNG?raw=true" width="32%"> <img src = "https://github.com/Pradnya1208/Credit-Card-Fraud-Detection-Using-Neural-Networks/blob/main/output/svm2.PNG?raw=true" width="32%"> <img src = "https://github.com/Pradnya1208/Credit-Card-Fraud-Detection-Using-Neural-Networks/blob/main/output/svm1.PNG?raw=true" width="32%">
 ```
 Accuracy : 0.94
 F1 score : 0.92
