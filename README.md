@@ -58,7 +58,7 @@ undersample = RandomUnderSampler(sampling_strategy=0.5)
 
 ## Machine Learning Model Evaluation and Prediction:
 ### Logistic Regression:
-<img src ="https://github.com/Pradnya1208/Credit-Card-Fraud-Detection-Using-Neural-Networks/blob/main/output/lr.PNG?raw=true" width="33%"> <img src= "https://github.com/Pradnya1208/Credit-Card-Fraud-Detection-Using-Neural-Networks/blob/main/output/lr1.PNG?raw=true" width="33%"> <img src="https://github.com/Pradnya1208/Credit-Card-Fraud-Detection-Using-Neural-Networks/blob/main/output/lr2.PNG?raw=true" width="33%">
+<img src ="https://github.com/Pradnya1208/Credit-Card-Fraud-Detection-Using-Neural-Networks/blob/main/output/lr.PNG?raw=true" width="31%"> <img src= "https://github.com/Pradnya1208/Credit-Card-Fraud-Detection-Using-Neural-Networks/blob/main/output/lr1.PNG?raw=true" width="31%"> <img src="https://github.com/Pradnya1208/Credit-Card-Fraud-Detection-Using-Neural-Networks/blob/main/output/lr2.PNG?raw=true" width="31%">
 ```
 Accuracy : 0.94
 F1 score : 0.92
