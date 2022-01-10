@@ -47,7 +47,8 @@ Although simple and effective, a limitation of this technique is that examples a
 
 <img src="https://github.com/Pradnya1208/Credit-Card-Fraud-Detection-Using-Neural-Networks/blob/main/output/undersampling.PNG?raw=true">
 <br>
-For undersampling, we can use the package imblearn with RandomUnderSampler function.<br>
+For undersampling, we can use the package imblearn with RandomUnderSampler function. <br>
+
 ```
 import imblearn
 from imblearn.under_sampling import RandomUnderSampler 
