@@ -75,6 +75,7 @@ AUC : 0.97
 
 
 ### Random Forest:
+
 <img src = "https://github.com/Pradnya1208/Credit-Card-Fraud-Detection-Using-Neural-Networks/blob/main/output/RF.PNG?raw=true" width="33%"> <img src = "https://github.com/Pradnya1208/Credit-Card-Fraud-Detection-Using-Neural-Networks/blob/main/output/RF1.PNG?raw=true" width="33%"> <img src = "https://github.com/Pradnya1208/Credit-Card-Fraud-Detection-Using-Neural-Networks/blob/main/output/RF2.PNG?raw=true" width="33%">
 ```
 Accuracy : 0.95
@@ -83,6 +84,7 @@ AUC : 0.97
 ```
 
 ### XGBoost:
+The sequential ensemble methods, also known as “boosting”, creates a sequence of models that attempt to correct the mistakes of the models before them in the sequence. The first model is built on training data, the second model improves the first model, the third model improves the second, and so on.<br>
 <img src = "https://github.com/Pradnya1208/Credit-Card-Fraud-Detection-Using-Neural-Networks/blob/main/output/XG.PNG?raw=true" width="33%"> <img src = "https://github.com/Pradnya1208/Credit-Card-Fraud-Detection-Using-Neural-Networks/blob/main/output/XG1.PNG?raw=true" width="33%"> <img src = "https://github.com/Pradnya1208/Credit-Card-Fraud-Detection-Using-Neural-Networks/blob/main/output/XG2.PNG?raw=true" width="33%">
 ```
 Accuracy : 0.95
@@ -90,13 +92,39 @@ F1 score : 0.93
 AUC : 0.97
 ```
 ### Multi Layer Perceptron:
+<div align="center">
+<img src="https://github.com/Pradnya1208/Credit-Card-Fraud-Detection-Using-Neural-Networks/blob/main/output/perceptron.PNG?raw=true">
+</div>
+The layers of a neural network are made of nodes. A node combines input from the data with a set of coefficients and bias, that either amplify or dampen that input, thereby assigning significance to inputs with regard to the task the algorithm is trying to learn. These input-weight products are summed and then the sum is passed through a node’s so-called activation function, to determine whether and to what extent that signal should progress further through the network to affect the ultimate outcome, say, an act of classification. If the signals passes through, the neuron has been “activated.” <br>
+
 <img src = "https://github.com/Pradnya1208/Credit-Card-Fraud-Detection-Using-Neural-Networks/blob/main/output/percept.PNG?raw=true" width="33%"> <img src = "https://github.com/Pradnya1208/Credit-Card-Fraud-Detection-Using-Neural-Networks/blob/main/output/percept1.PNG?raw=true" width="33%"> <img src = "https://github.com/Pradnya1208/Credit-Card-Fraud-Detection-Using-Neural-Networks/blob/main/output/percept2.PNG?raw=true" width="33%">
+
 ```
 Accuracy : 0.95
 F1 score : 0.94
 AUC : 0.98
 ```
+
 ### Neural Networks:
+```
+model = Sequential()
+model.add(Dense(32, input_shape=(29,), activation='relu')),
+model.add(Dropout(0.2)),
+model.add(Dense(16, activation='relu')),
+model.add(Dropout(0.2)),
+model.add(Dense(8, activation='relu')),
+model.add(Dropout(0.2)),
+model.add(Dense(4, activation='relu')),
+model.add(Dropout(0.2)),
+model.add(Dense(1, activation='sigmoid'))
+opt = tf.keras.optimizers.Adam(learning_rate=0.001) #optimizer
+model.compile(optimizer=opt, loss=tf.keras.losses.BinaryCrossentropy(), metrics=['accuracy'])
+
+earlystopper = tf.keras.callbacks.EarlyStopping(monitor='val_accuracy', min_delta=0, patience=15, verbose=1,mode='auto', baseline=None, restore_best_weights=False)
+history = model.fit(X_train.values, y_train.values, epochs = 6, batch_size=5, validation_split = 0.15, verbose = 0, callbacks = [earlystopper])
+```
+The hidden layers are composed of an activation function called ReLU. It'is a piecewise linear function that will output the input directly if it is positive, otherwise, it will output zero. The last node has a sigmoid function that turns values to 0 or 1 (for binary classification).<br>
+
 <img src = "https://github.com/Pradnya1208/Credit-Card-Fraud-Detection-Using-Neural-Networks/blob/main/output/NN1.PNG?raw=true" width="40%"> <img src = "https://github.com/Pradnya1208/Credit-Card-Fraud-Detection-Using-Neural-Networks/blob/main/output/NN2.PNG?raw=true" width="40%">
 <img src="https://github.com/Pradnya1208/Credit-Card-Fraud-Detection-Using-Neural-Networks/blob/main/output/ANN.PNG?raw=true" width="33%"> <img src ="https://github.com/Pradnya1208/Credit-Card-Fraud-Detection-Using-Neural-Networks/blob/main/output/ANN1.PNG?raw=true" width="33%"> <img src="https://github.com/Pradnya1208/Credit-Card-Fraud-Detection-Using-Neural-Networks/blob/main/output/ANN2.PNG?raw=true" width="33%">
 ```
@@ -110,6 +138,7 @@ AUC : 0.98
 
 
 ### Lessons Learned
+`Neural Networks`
 `Classification Algorithms`
 `Multilayer Perceptrons`
 `XGBoost classifier`
